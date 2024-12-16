@@ -7,7 +7,6 @@ import { useState } from "react";
 
 const Navbar = (props) => {
   const [loginPop, setLoginPop] = useState(false);
-  const [isLogged]=useState(true)
 
   return (
     <>
@@ -33,9 +32,8 @@ const Navbar = (props) => {
         <div
           onClick={() => setLoginPop(!loginPop)}
           className="flex h-12 p-3 ml-6 cursor-pointer underline hover:no-underline"
-        > 
-        {isLogged?"name":<h1 className="font-bold text-lg">Login</h1>}
-          
+        >
+          <h1 className="font-bold text-lg">Login</h1>
         </div>
         <div className="w-28 flex h-12 p-2 ml-6 cursor-pointer rounded-full border border-yellow-500">
           <h1 className="font-bold text-lg ml-3">+ SELL</h1>

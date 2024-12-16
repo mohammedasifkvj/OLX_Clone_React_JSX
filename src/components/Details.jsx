@@ -5,8 +5,6 @@ const Details = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // console.log(location);
-
   return (
     <div className="p-4 relative">
       <img
